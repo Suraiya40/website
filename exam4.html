@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(hair.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 10vh;
+            height: 70vh;
+
+        }
+        .menuBar{
+            display: flex;
+            width: 1710px;
+            height: 8vh;
+            background-color: white;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        .logo{
+            display: flex;
+            width: 30%;
+            
+        }
+        
+        .logo1{
+            font-size: 40px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            padding-left: 100px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .logo2{
+            font-size: 40px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            color: gray;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu a{
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family:'Arial Narrow';
+            padding-right: 20px;
+            padding-left: 20px;
+            color: black;
+            letter-spacing: -0.3px;
+            text-align: center;
+        }
+
+        .main-footer{
+            width: 1710px;
+            height: 25vh;
+            background-color: white;
+            margin-top: 0px;
+            display: flex;
+        }
+        .text1{
+            padding-top: 30px;
+            text-align: left;
+            padding-left: 100px;
+            padding-right: 270px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(129, 129, 129);
+            line-height: 25px;
+        }
+        .box1{
+            width: 300px;
+            height: 120px;
+            background-color: white;
+            margin-top: 400px;
+            margin-left: 300px;
+        }
+        .box1 p{
+            font-size: 50px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            padding-left: 60px;
+            padding-top: 60px;
+        }
+        .text2{
+            color: black;
+            margin-left: 360px;
+            font-size: 50px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            line-height: 60px;
+        }
+
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+        .dropdown-content{
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            text-align: left;
+            min-width: 100px;
+            width: 150px;
+            height: 180px;
+            display: none;
+        }
+        .dropdown-content a{
+            display: block;
+            color: white;
+            text-align: justify;
+            padding-top: 10px;
+            font-family:'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding-left: 6px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+        }
+        .menu a:hover{
+            background-color: black;
+            color: white;
+            padding: 8px 10px;
+        }
+
+        .part2{
+            margin-top: 150px;
+            width: 1500px;
+            display: flex;
+        }
+        .part2a{
+            width: 800px;
+            height: 350px;
+            margin-left: 100px;
+
+        }
+        .part2a h2{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .part2atext{
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .part2btext{
+            font-size: 22px;
+            padding-top: 10px;
+            color: rgb(129, 129, 129);
+            font-weight: arial;
+        }
+        .imgpart{
+            width: 300px;
+            height: 300px;
+            padding-left: 160px;
+        }
+        .btrn{
+            background-color: red;
+            width: 170px;
+            height: 30px;
+            padding: 16px 15px;
+            margin-top: 30px;
+            margin-left: 0px;
+            border-radius: 30px;
+        }
+        .btrn p{
+            font-size: 25px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .part3{
+            margin-top: 300px;
+            width: 1500px;
+            display: flex;
+        }
+        .part3a{
+            width: 900px;
+            height: 350px;
+            margin-left: 450px;
+
+        }
+        .part3a h2{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .part3atext{
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .part3btext{
+            font-size: 22px;
+            padding-top: 10px;
+            color: rgb(129, 129, 129);
+            font-weight: arial;
+        }
+        .imgpart1{
+            width: 300px;
+            height: 300px;
+            padding-left: 100px;
+        }
+        .btrn1{
+            background-color: red;
+            width: 170px;
+            height: 30px;
+            padding: 16px 15px;
+            margin-top: 30px;
+            margin-left: 0px;
+            border-radius: 30px;
+        }
+        .btrn1 p{
+            font-size: 25px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+        <nav class="menuBar">
+            <div class="logo">
+                <div class="logo1">
+                    <p>black</p>
+                </div>
+                <div class="logo2">
+                    <p>air</p>
+                </div>
+                </p>
+            </div>
+            <div class="menu">
+                <div class="dropdown-container">
+                <a href="">the salon</a>
+                <div class="dropdown-content">
+                    <a href="">overview</a>
+                        <a href=""> mission</a>
+                        <a href="">services</a>
+                        <a href="">location</a>
+                        <a href="">address</a>
+                </div>
+            </div>
+                <a href="">meet our team</a>
+                <a href="">our services</a>
+                <a href="">portfolio</a>
+                <a href="">promotions</a>
+                <a href="">video</a>
+                <a href="">blog</a>
+                <a href="">contact</a>
+            </div>
+        </nav>
+        <div class="twobox">
+        <div class="box1">
+            <p>the </p>
+        </div>
+        
+    </div>
+        <div class="main-footer">
+                <p class="text2">
+                    kawl <br> salon
+                </p>
+            <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatibus vel necessitatibus debitis nulla. Quo dolor nihil accusamus, nobis odit fugit, expedita necessitatibus quasi, eius voluptates iusto. Nihil necessitatibus, nulla veniam cumque minus quod, eligendi, harum doloremque consequatur nisi consectetur. Quo ad itaque ea temporibus repudiandae rem sequi atque, nemo corporis aspernatur enim nostrum saepe ut, laborum repellendus!equi atque, nemo corporis aspernaturs harum doloremque consequatur</p>
+    </div>
+
+    <div class="part2">
+        <div class="part2a">
+            <h2>digital catalog</h2>
+            <p class="part2atext">Attract & Engage Your Clients with Interactive Website</p>
+            <p class="part2btext">ReSpark’s digital catalog makes it easier than ever to create, manage and update your customized digital store. You can use your digital catalog to list all your services, products, and special promotions. With ReSpark’s user-friendly salon management software, you can seamlessly update pricing, booking availability, and images in real-time and stay on top of your business.
+
+            </p>
+
+            <div class="btrn">
+                <p>schedule demo</p>
+            </div>
+        </div>
+        <div class="imgpart">
+            <img src="phone.jpg" alt="p">
+        </div>
+
+    </div>
+    <div class="part3">
+        <div class="imgpart1">
+            <img src="laptop.jpg" alt="p">
+        </div>
+        <div class="part3a">
+            <h2>Online Appointments</h2>
+            <p class="part3atext">Easy To Book. Easier To Schedule</p>
+            <p class="part3btext">ReSpark’s digital catalog makes it easier than ever to create, manage and update your customized digital store. You can use your digital catalog to list all your services, products, and special promotions. With ReSpark’s user-friendly salon management software, you can seamlessly update pricing, booking availability, and images in real-time and stay on top of your business.
+
+            </p>
+
+            <div class="btrn1">
+                <p>schedule demo</p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
